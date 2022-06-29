@@ -1,7 +1,7 @@
 {
-  "name": "amadeus",
-  "version": "6.0.0",
-  "description": "Node library for the Amadeus travel APIs",
+  "name": "@hchua/amadeus",
+  "version": "6.0.1",
+  "description": "Node library for the Amadeus travel APIs (fork)",
   "main": "lib/amadeus.js",
   "scripts": {
     "prebuild": "npm run lint:src & npm run docs",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amadeus4dev/amadeus-node.git"
+    "url": "git+https://github.com/hendychua/amadeus-node.git"
   },
   "keywords": [
     "amadeus",
@@ -39,7 +39,7 @@
   "author": "amadeus-developer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amadeus4dev/amadeus-node/issues"
+    "url": "https://github.com/hendychua/amadeus-node.git/issues"
   },
   "homepage": "https://developers.amadeus.com",
   "contributors": [
@@ -50,7 +50,6 @@
     "Anna Tsolakou",
     "Minji Kim",
     "Gustavo Giunco Bertoldi"
-
   ],
   "devDependencies": {
     "@babel/cli": "^7.4.4",
