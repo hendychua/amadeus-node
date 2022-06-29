@@ -17,7 +17,8 @@ const RECOGNIZED_OPTIONS = [
   'customAppVersion',
   'http',
   'ssl',
-  'port'
+  'port',
+  'guestOfficeId',
 ];
 
 /**
@@ -49,6 +50,7 @@ class Validator {
   initializeClientCredentials(client, options) {
     client.clientId = this.initRequired('clientId', options);
     client.clientSecret = this.initRequired('clientSecret', options);
+    client.guestOfficeId = this.initOptional('guestOfficeId', options);
   }
 
   initializeLogger(client, options) {

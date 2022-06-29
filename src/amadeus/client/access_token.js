@@ -90,7 +90,8 @@ class AccessToken {
     client.unauthenticatedRequest('POST', '/v1/security/oauth2/token', {
       'grant_type' : 'client_credentials',
       'client_id' : client.clientId,
-      'client_secret' : client.clientSecret
+      'client_secret' : client.clientSecret,
+      'guest_office_id': client.guestOfficeId || '',
     }).then((response) => {
       this.storeAccessToken(response);
       this.emitOrLoadAccessToken(client, emitter);

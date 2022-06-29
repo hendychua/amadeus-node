@@ -40,6 +40,7 @@ import DutyOfCare    from './amadeus/namespaces/duty_of_care';
  * @param {string} params.clientId the API key used to authenticate the API
  * @param {string} params.clientSecret the API secret used to authenticate
  *  the API
+ * @param {string} params.guestOfficeId optional guest office ID to use
  * @param {Object} [params.logger=console] a `console`-compatible logger that
  *  accepts `log`, `error` and `debug` calls.
  * @param {string} [params.logLevel='warn'] the log level for the client,
