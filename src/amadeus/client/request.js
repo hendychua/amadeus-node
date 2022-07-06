@@ -40,6 +40,9 @@ class Request {
       'User-Agent' : this.userAgent(),
       'Accept' : 'application/json, application/vnd.amadeus+json'
     };
+    if (options.amaClientRef) {
+      this.headers['Ama-Client-Ref'] = options.amaClientRef;
+    }
     this.ListHTTPOverride= [
       '/v2/shopping/flight-offers',
       '/v1/shopping/seatmaps',

@@ -19,6 +19,7 @@ const RECOGNIZED_OPTIONS = [
   'ssl',
   'port',
   'guestOfficeId',
+  'amaClientRef',
 ];
 
 /**
@@ -51,6 +52,7 @@ class Validator {
     client.clientId = this.initRequired('clientId', options);
     client.clientSecret = this.initRequired('clientSecret', options);
     client.guestOfficeId = this.initOptional('guestOfficeId', options);
+    client.amaClientRef = this.initOptional('amaClientRef', options);
   }
 
   initializeLogger(client, options) {
